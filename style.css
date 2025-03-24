@@ -167,7 +167,7 @@ body {
 /* Hero Banner Section */
 .hero-section {
     position: relative;
-    background:  url('assets/images/main-banner.png');
+    background:  url('assets/images/onco-banner.png');
     /* linear-gradient(rgba(102, 66, 0, 0.85), rgba(145, 99, 0, 0.8)), */
     background-size: cover;
     background-position: center;
