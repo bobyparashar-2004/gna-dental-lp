@@ -3048,7 +3048,7 @@ margin-bottom: 0.6rem;
     transform: scale(1.08);
 }
 
-.doctor-decoration {
+/* .doctor-decoration {
     position: absolute;
     bottom: 0;
     left: 0;
@@ -3056,7 +3056,7 @@ margin-bottom: 0.6rem;
     height: 35px;
     background: linear-gradient(135deg, var(--medium-brown), var(--dark-brown));
     clip-path: polygon(0 30%, 100% 0, 100% 100%, 0% 100%);
-}
+} */
 
 .doctor-details {
     padding: 1.5rem;
