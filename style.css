@@ -182,11 +182,11 @@ body {
 
 /* Hero Banner Section */
 .hero-section {
-  position: relative;
-  background: url("assets/images/onco-banner.png");
+  /* position: relative; */
+  background: url("assets/images/gna\ BANNER.png");
   /* linear-gradient(rgba(102, 66, 0, 0.85), rgba(145, 99, 0, 0.8)), */
-  background-size: cover;
-  background-position: center;
+  background-size: auto;
+  /* background-position: center; */
   min-height: 600px;
   display: flex;
   align-items: center;
@@ -195,7 +195,7 @@ body {
 }
 @media (max-width: 768px) {
   .hero-section {
-    background: linear-gradient(rgba(102, 66, 0, 0.85), rgba(145, 99, 0, 0.8));
+    background: #00a1be;
   }
 }
 
@@ -613,7 +613,7 @@ body {
   }
 
   .cta-container {
-    padding: 30px;
+    padding: 30px 50px;
   }
 
   .heart-graphic {
@@ -3187,17 +3187,21 @@ margin-right: 8px;
 
 .doctor-name {
   color: var(--dark-brown);
+  margin: 10px 0px;
   font-size: clamp(1.1rem, 3vw, 1.3rem);
   font-weight: 700;
-  margin-bottom: 0.8rem;
+  margin-bottom: 0.1rem;
   position: relative;
-  padding-bottom: 0.8rem;
+  padding-bottom: 0.2rem;
   transition: color 0.3s ease;
-  min-height: 3.5rem;
+  min-height: 2rem;
   display: flex;
   align-items: flex-start;
+  /* display: block; */
+  text-align: center;
+  justify-content: center;
 }
-
+/* 
 .doctor-name::after {
   content: "";
   position: absolute;
@@ -3207,7 +3211,7 @@ margin-right: 8px;
   height: 2px;
   background: var(--medium-brown);
   transition: width 0.3s ease;
-}
+} */
 
 .doctor-profile:hover .doctor-name::after {
   width: 80px;

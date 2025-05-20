@@ -12,6 +12,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/10.0.0/swiper-bundle.min.css" rel="stylesheet">
      <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+
+     
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <style>
@@ -267,16 +269,17 @@
         }
         
         .doctor-img-container {
-            height: 240px;
-            background-color: var(--light-cream);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            overflow: hidden;
-            position: relative;
-        }
+    height: 335px;
+    background-color: var(--light-cream);
+    display: flex
+;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    position: relative;
+}
         
-        .doctor-img {
+        /* .doctor-img {
             width: 150px;
             height: 150px;
             border-radius: 50%;
@@ -288,12 +291,12 @@
             align-items: center;
             justify-content: center;
             position: relative;
-        }
+        } */
         
-        .doctor-img i {
+        /* .doctor-img i {
             font-size: 60px;
             color: var(--dark-brown);
-        }
+        } */
         
         .card-body {
             padding: 30px 25px;
@@ -340,6 +343,7 @@
             text-transform: uppercase;
             letter-spacing: 0.5px;
             font-size: 14px;
+            padding-bottom: 6px;
             box-shadow: 0 5px 15px rgba(0, 161, 190, 0.3);
         }
         
@@ -647,21 +651,7 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav">
-                    <!-- <li class="nav-item active">
-                        <a class="nav-link" href="#">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Services</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Doctors</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">About Us</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Contact</a>
-                    </li> -->
+                    
                     <li class="nav-item">
                         <a href="#form" class="appointment-btn">
                             <i class="bi bi-calendar-check"></i> Appointment
@@ -701,9 +691,7 @@
                 </div>
                 <div class="col-lg-5 offset-lg-1">
                     <div class="form-container" id="form">
-                        <!-- <div class="form-icon">
-                            <i class="bi bi-heart-pulse"></i>
-                        </div> -->
+                        
                         <h3 class="form-title">Get Free Second Opinion</h3>
                         <form action='https://app.formester.com/forms/pHgD02OdZYo8/submissions' method='POST'>
                             <div class="row">
@@ -712,27 +700,14 @@
                                     <input type="text" class="form-control" name="name" placeholder="Your name"
                                         required>
                                 </div>
-                                <!-- <div class="col-md-6 form-group">
-                                    <label class="form-label">Last Name</label>
-                                    <input type="text" class="form-control" placeholder="Your last name">
-                                </div> -->
+                               
                             </div>
                             <div class="form-group">
                                 <label class="form-label">Phone</label>
                                 <input type="tel" class="form-control" name="phone" placeholder="Your phone number"
                                     required>
                             </div>
-                            <!-- <div class="form-group">
-                                <label class="form-label">Hospital Location</label>
-                                <select class="form-select">
-                                    <option selected disabled>Select Hospital Location</option>
-                                    <option>Main Center</option>
-                                    <option>North Branch</option>
-                                    <option>South Branch</option>
-                                    <option>East Branch</option>
-                                    <option>West Branch</option>
-                                </select>
-                            </div> -->
+                          
                             <div class="form-group">
                                 <label class="form-label">Age</label>
                                 <input type="number" class="form-control" name="Age" placeholder="Your Age">
@@ -743,7 +718,35 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section> 
+<!-- 
+<section class="hero-section py-5 position-relative">
+  <div class="container">
+    <div class="row justify-content-end">
+      <div class="col-lg-5 col-md-6">
+        <div class="bg-white p-4 rounded shadow" id="form">
+          <h3 class="mb-4 text-center">Get Free Second Opinion</h3>
+          <form action="https://app.formester.com/forms/pHgD02OdZYo8/submissions" method="POST">
+            <div class="mb-3">
+              <label class="form-label">First Name</label>
+              <input type="text" class="form-control" name="name" placeholder="Your name" required>
+            </div>
+            <div class="mb-3">
+              <label class="form-label">Phone</label>
+              <input type="tel" class="form-control" name="phone" placeholder="Your phone number" required>
+            </div>
+            <div class="mb-3">
+              <label class="form-label">Age</label>
+              <input type="number" class="form-control" name="Age" placeholder="Your Age">
+            </div>
+            <button type="submit" class="btn btn-primary w-100">Enquire Now</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</section> -->
+
 
     <!-- Original Heart Section -->
     <section class="heart-section">
@@ -796,9 +799,9 @@
     <!-- CTA section remains untouched -->
     <div class="cta-container">
         <div class="row">
-            <div class="col-lg-8">
+            <div class="col-12 text-center" >
                 <h3 class="cta-title">Your Journey to a Confident Smile Starts Now</h3>
-                <p class="cta-subtitle">Book your consultation with the best oral and maxillofacial surgeon in India. Whether it's jaw surgery, facial reconstruction, or TMJ disorder, we are here to help you heal and shine.</p>
+                <p class="cta-subtitle">Book your consultation with the best oral and maxillofacial surgeon in India. Whether it's jaw surgery, </br>facial reconstruction, or TMJ disorder, we are here to help you heal and shine.</p>
                 <a href="#" class="btn btn-primary">Book an Appointment</a>
             </div>
         </div>
@@ -832,7 +835,7 @@
                     <div class="ivy-features">
                         <div class="ivy-feature-item">
                             <div class="ivy-feature-icon">
-                                <img src="assets/icons/1.png" alt="Advanced Treatment Options">
+                                <img src="assets/icons/World-Class Treatment & Expertise.png" alt="Advanced Treatment Options">
                             </div>
                             <div class="ivy-feature-content">
                                 <h3 class="ivy-feature-title">World-Class Treatment & Expertise
@@ -843,7 +846,7 @@
 
                         <div class="ivy-feature-item">
                             <div class="ivy-feature-icon">
-                                <img src="assets/icons/2.png" alt="Comprehensive Care">
+                                <img src="assets/icons/Multidisciplinary Surgical Team.png" alt="Comprehensive Care">
                             </div>
                             <div class="ivy-feature-content">
                                 <h3 class="ivy-feature-title">
@@ -853,7 +856,7 @@
 
                         <div class="ivy-feature-item">
                             <div class="ivy-feature-icon">
-                                <img src="assets/icons/3.png" alt="State-of-the-Art Facilities">
+                                <img src="assets/icons/State-of-the-Art Digital Technology.png" alt="State-of-the-Art Facilities">
                             </div>
                             <div class="ivy-feature-content">
                                 <h3 class="ivy-feature-title">
@@ -870,96 +873,7 @@
   
 
 
-    <!-- <section class="doctors-showcase">
-        <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-lg-8 text-center">
-                    <div class="doctors-showcase-header">
-                        
-                        <h2 class="doctors-showcase-heading">Talk to Our Specialists Today
-</h2>
-<p class="doctors-showcase-intro mb-2">Your face deserves the best. Let’s give it the care it needs</p>
-                        <p class="doctors-showcase-intro">Meet our experienced consultants — renowned across India for their expertise in facial, jaw, and TMJ treatments.
-                        </p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="swiper doctors-specialists-swiper">
-                <div class="swiper-wrapper">
-                    <div class="swiper-slide">
-                        <div class="doctor-profile">
-                            <div class="doctor-portrait">
-                                <div class="doctor-portrait-wrapper">
-                                    <img src="assets/images/jaya.png" alt="Dr. Devendra Singh Solanki">
-                                </div>
-                                <div class="doctor-decoration"></div>
-                            </div>
-                            <div class="doctor-details">
-                                <h3 class="doctor-name">Dr. S Jayalakshmi</h3>
-                                <div class="doctor-role">Head - Radiation Oncology & CyberKnife Centre (Unit II)</div>
-                                <div class="doctor-btn-group">
-                                    <a href="#form" class="doctor-consult-btn">Book Appointment</a>
-                                    <a href="https://wa.me/919599285476" class="doctor-whatsapp-btn">
-                                        <i class="bi bi-whatsapp"></i>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="swiper-slide">
-                        <div class="doctor-profile">
-                            <div class="doctor-portrait">
-                                <div class="doctor-portrait-wrapper">
-                                    <img src="assets/images/priyal.png" alt="Dr. Devendra Singh Solanki">
-                                </div>
-                                <div class="doctor-decoration"></div>
-                            </div>
-                            <div class="doctor-details">
-                                <h3 class="doctor-name">Dr. Priya Tiwari </h3>
-                                <div class="doctor-role">Head - Medical Oncology </div>
-                                <div class="doctor-btn-group">
-                                    <a href="#form" class="doctor-consult-btn">Book Appointment</a>
-                                    <a href="https://wa.me/919599285476" class="doctor-whatsapp-btn">
-                                        <i class="bi bi-whatsapp"></i>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="doctor-profile">
-                            <div class="doctor-portrait">
-                                <div class="doctor-portrait-wrapper">
-                                    <img src="assets/images/kamal.png" alt="Dr. Devendra Singh Solanki">
-                                </div>
-                                <div class="doctor-decoration"></div>
-                            </div>
-                            <div class="doctor-details">
-                                <h3 class="doctor-name">Dr. Kamal Verma</h3>
-                                <div class="doctor-role">Sr. Consultant - Radiation Oncology</div>
-                                <div class="doctor-btn-group">
-                                    <a href="#form" class="doctor-consult-btn">Book Appointment</a>
-                                    <a href="https://wa.me/919599285476" class="doctor-whatsapp-btn">
-                                        <i class="bi bi-whatsapp"></i>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>   
-                    </div> 
-                </div>
-              
-                <div class="swiper-button-next"></div>
-                <div class="swiper-button-prev"></div>
-               
-                <div class="swiper-pagination"></div>
-            </div>
-        </div>
-    </section> -->
-
-
+    
      <section class="doctor-section">
         <div class="container">
             <h2 class="section-title">Our Expert Specialists</h2>
@@ -970,9 +884,10 @@
                     <div class="doctor-card">
                         <span class="badge-experience">20+ Years Experience</span>
                         <div class="doctor-img-container">
-                            <div class="doctor-img">
+                           <img src="assets/images/Dr-suresh.webp" alt="State-of-the-Art Facilities">
+                            <!-- <div class="doctor-img">
                                 <i class="fas fa-user-md"></i>
-                            </div>
+                            </div> -->
                             <div class="decoration-shape shape-1"></div>
                             <div class="decoration-shape shape-2"></div>
                         </div>
@@ -1003,9 +918,10 @@
                     <div class="doctor-card">
                         <span class="badge-experience">15+ Years Experience</span>
                         <div class="doctor-img-container">
-                            <div class="doctor-img">
+                           <img src="assets/images/Dr-navatha.webp" alt="State-of-the-Art Facilities">
+                            <!-- <div class="doctor-img">
                                 <i class="fas fa-user-md"></i>
-                            </div>
+                            </div> -->
                             <div class="decoration-shape shape-1"></div>
                             <div class="decoration-shape shape-2"></div>
                         </div>
@@ -1035,7 +951,7 @@
 
 
 
-    <section class="cardio_treatments_section"  style="background-color: #304673;">
+    <section class="cardio_treatments_section" style="background-color: #304673;">
 
         <div class="container">
             <!-- Section Header -->
@@ -1057,7 +973,7 @@
             <div class="cardio_treatment_card">
                 <div class="cardio_icon_wrapper">
                     <div class="cardio_icon">
-                        <img src="assets/icons/25.png" alt="Stroke Care">
+                        <img src="assets/icons/Facial Cosmetic Surgery.png" alt="Stroke Care">
                     </div>
                 </div>
                 <h3 class="cardio_treatment_name"> Facial Trauma Surgery</h3>
@@ -1069,7 +985,7 @@
             <div class="cardio_treatment_card">
                 <div class="cardio_icon_wrapper">
                     <div class="cardio_icon">
-                        <img src="assets/icons/26.png" alt="Epilepsy Management">
+                        <img src="assets/icons/TMJ Disorder Treatment.png" alt="Epilepsy Management">
                     </div>
                 </div>
                 <h3 class="cardio_treatment_name">TMJ Disorder Treatment</h3>
@@ -1081,7 +997,7 @@
             <div class="cardio_treatment_card">
                 <div class="cardio_icon_wrapper">
                     <div class="cardio_icon">
-                        <img src="assets/icons/27.png" alt="Headache and Migraine Treatment">
+                        <img src="assets/icons/Orthognathic (Jaw) Surgery.png" alt="Headache and Migraine Treatment">
                     </div>
                 </div>
                 <h3 class="cardio_treatment_name">Orthognathic (Jaw) Surgery</h3>
@@ -1093,7 +1009,7 @@
             <div class="cardio_treatment_card">
                 <div class="cardio_icon_wrapper">
                     <div class="cardio_icon">
-                        <img src="assets/icons/28.png" alt="Spine Disorders">
+                        <img src="assets/icons/Facial Trauma Surgery.png" alt="Spine Disorders">
                     </div>
                 </div>
                 <h3 class="cardio_treatment_name">Facial Cosmetic Surgery</h3>
@@ -1107,7 +1023,7 @@
             <div class="cardio_treatment_card">
                 <div class="cardio_icon_wrapper">
                     <div class="cardio_icon">
-                        <img src="assets/icons/25.png" alt="Stroke Care">
+                        <img src="assets/icons/Obstructive Sleep Apnea Surgery.png" alt="Stroke Care">
                     </div>
                 </div>
                 <h3 class="cardio_treatment_name"> Obstructive Sleep Apnea Surgery</h3>
@@ -1119,7 +1035,7 @@
             <div class="cardio_treatment_card">
                 <div class="cardio_icon_wrapper">
                     <div class="cardio_icon">
-                        <img src="assets/icons/26.png" alt="Epilepsy Management">
+                        <img src="assets/icons/Oral Cancer Management.png" alt="Epilepsy Management">
                     </div>
                 </div>
                 <h3 class="cardio_treatment_name">Oral Cancer Management</h3>
@@ -1131,7 +1047,7 @@
             <div class="cardio_treatment_card">
                 <div class="cardio_icon_wrapper">
                     <div class="cardio_icon">
-                        <img src="assets/icons/27.png" alt="Headache and Migraine Treatment">
+                        <img src="assets/icons/Cysts & Tumors of the Jaw.png" alt="Headache and Migraine Treatment">
                     </div>
                 </div>
                 <h3 class="cardio_treatment_name">Cysts & Tumors of the Jaw</h3>
@@ -1143,7 +1059,7 @@
             <div class="cardio_treatment_card">
                 <div class="cardio_icon_wrapper">
                     <div class="cardio_icon">
-                        <img src="assets/icons/28.png" alt="Spine Disorders">
+                        <img src="assets/icons/Reconstructive Jaw Surgery.png" alt="Spine Disorders">
                     </div>
                 </div>
                 <h3 class="cardio_treatment_name">Reconstructive Jaw Surgery</h3>
@@ -1287,219 +1203,153 @@
 </section>
 
 
-    <!-- <section class="ivy-video-testimonials py-5">
-        <div class="container">
-         
-            <div class="row justify-content-center">
-                <div class="col-lg-8 text-center">
-                    <div class="ivy-section-header">
-                        <span class="ivy-section-tagline">Patient Stories</span>
-                        <h2 class="ivy-section-heading">Video Testimonials</h2>
-                        <div class="ivy-divider">
-                            <span class="ivy-divider-icon"><i class="bi bi-play-circle"></i></span>
-                        </div>
-                        <p class="ivy-section-intro">Hear directly from our patients about their experiences and
-                            successful treatments at Artemis Hospital.</p>
-                    </div>
-                </div>
-            </div>
-
-          
-            <div class="row mt-4">
-                <div class="col-12">
-                    <div class="ivy-video-grid">
-                     
-                        <div class="ivy-video-card">
-                            <div class="ivy-video-preview">
-                                <div class="ivy-video-placeholder" data-video-id="ELuRdQVtBbM" data-patient-name="Mr. Chavi Raj" data-condition="Cancer">
-                                    <img src="https://img.youtube.com/vi/ELuRdQVtBbM/maxresdefault.jpg" alt="Mr. Chavi Raj's Story" class="ivy-thumbnail">
-                                    <div class="ivy-custom-play-btn">
-                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="64" height="64">
-                                            <circle cx="12" cy="12" r="11" fill="#FEFBD9" stroke="#664200" stroke-width="1.5" />
-                                            <path d="M16 12l-6 4V8l6 4z" fill="#664200" />
-                                        </svg>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="ivy-video-info">
-                                <h4>Mr. Chavi Raj</h4>
-                                <p>Cancer</p>
-                            </div>
-                        </div>
-
-                      
-                        <div class="ivy-video-card">
-                            <div class="ivy-video-preview">
-                                <div class="ivy-video-placeholder" data-video-id="vQqHUdUcNwk" data-patient-name="Mr. Pradyumna Dutta" data-condition="Prostate Cancer">
-                                    <img src="https://img.youtube.com/vi/vQqHUdUcNwk/maxresdefault.jpg" alt="Mr. Pradyumna Dutta's Story" class="ivy-thumbnail">
-                                    <div class="ivy-custom-play-btn">
-                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="64" height="64">
-                                            <circle cx="12" cy="12" r="11" fill="#FEFBD9" stroke="#664200" stroke-width="1.5" />
-                                            <path d="M16 12l-6 4V8l6 4z" fill="#664200" />
-                                        </svg>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="ivy-video-info">
-                                <h4>Mr. Pradyumna Dutta</h4>
-                                <p>Prostate Cancer</p>
-                            </div>
-                        </div>
-
-                        <div class="ivy-video-card">
-                            <div class="ivy-video-preview">
-                                <div class="ivy-video-placeholder" data-video-id="hf5lOukzQ94" data-patient-name="Mr. Rajiv" data-condition="4th Stage Cancer">
-                                    <img src="https://img.youtube.com/vi/hf5lOukzQ94/maxresdefault.jpg" alt="Mr. Rajiv's Testimonial" class="ivy-thumbnail">
-                                    <div class="ivy-custom-play-btn">
-                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="64" height="64">
-                                            <circle cx="12" cy="12" r="11" fill="#FEFBD9" stroke="#664200" stroke-width="1.5" />
-                                            <path d="M16 12l-6 4V8l6 4z" fill="#664200" />
-                                        </svg>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="ivy-video-info">
-                                <h4>Mr. Rajiv</h4>
-                                <p>4th Stage Cancer</p>
-                            </div>
-                        </div>
-
-                       
-                        <div class="ivy-video-card">
-                            <div class="ivy-video-preview">
-                                <div class="ivy-video-placeholder" data-video-id="FxcUBX_Ll7g" data-patient-name="Mr. Radheshyam Malani" data-condition="Bladder Cancer">
-                                    <img src="https://img.youtube.com/vi/vlVbRegWHcc/maxresdefault.jpg" alt="Mr. Radheshyam Malani's Experience" class="ivy-thumbnail">
-                                    <div class="ivy-custom-play-btn">
-                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="64" height="64">
-                                            <circle cx="12" cy="12" r="11" fill="#FEFBD9" stroke="#664200" stroke-width="1.5" />
-                                            <path d="M16 12l-6 4V8l6 4z" fill="#664200" />
-                                        </svg>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="ivy-video-info">
-                                <h4>Mr. Radheshyam Malani</h4>
-                                <p>Bladder Cancer</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        
-      
-        <div id="videoModal" class="video-modal">
-            <span class="close-modal" id="closeModal">&times;</span>
-            <div class="video-modal-content">
-                <div class="video-container" id="videoContainer">
-                  
-                </div>
-            </div>
-        </div>
-    </section> -->
-
-
-
+   
 
     <!-- cta  -->
 
-     <section class="gnathos-testimonial-section" style="background-color: #031B4E;">
-    <div class="container">
-      <h2 class="gnathos-section-title">Real Stories. Real Results.</h2>
-      <p class="gnathos-section-subtitle" style="color:#fff">What our patients say about their experience</p>
+    <section class="gnathos-testimonial-section" style="background-color: #304673 !important;">
+  <div class="container">
+    <h2 class="gnathos-section-title">Real Stories. Real Results.</h2>
+    <p class="gnathos-section-subtitle" style="color:#fff">What our patients say about their experience</p>
 
-      <div class="gnathos-decoration-shape gnathos-shape-1"></div>
-      <div class="gnathos-decoration-shape gnathos-shape-2"></div>
+    <div class="gnathos-decoration-shape gnathos-shape-1"></div>
+    <div class="gnathos-decoration-shape gnathos-shape-2"></div>
 
-      <div class="row">
-        <!-- Testimonial 1 -->
-        <div class="col-lg-4 col-md-6 mb-4">
-          <div class="gnathos-testimonial-card">
-            <span class="gnathos-testimonial-tag">TMJ Treatment</span>
-            <div class="gnathos-quote-icon"><i class="fas fa-quote-left"></i></div>
-            <div class="gnathos-testimonial-content">
-              <div class="gnathos-testimonial-rating">
-                <i class="fas fa-star gnathos-star-icon"></i>
-                <i class="fas fa-star gnathos-star-icon"></i>
-                <i class="fas fa-star gnathos-star-icon"></i>
-                <i class="fas fa-star gnathos-star-icon"></i>
-                <i class="fas fa-star gnathos-star-icon"></i>
-              </div>
-              <p class="gnathos-testimonial-text">
-                "My jaw pain and clicking <span class="gnathos-highlight">vanished</span> after visiting Gnathos. The care was exceptional!"
-              </p>
-              <div class="gnathos-client-info">
-                <div class="gnathos-client-avatar"><i class="fas fa-user"></i></div>
-                <div class="gnathos-client-details">
-                  <h5 class="gnathos-client-name">Ravi K.</h5>
-                  <p class="gnathos-client-location">Hyderabad</p>
+    <div id="testimonialCarousel" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner gap-3">
+
+        <!-- Slide 1 -->
+        <div class="carousel-item active ">
+          <div class="row justify-content-center">
+            <div class="col-md-4 col-12 mb-4 ">
+              <!-- Card 1 -->
+              <div class="gnathos-testimonial-card">
+                <span class="gnathos-testimonial-tag">TMJ Treatment</span>
+                <div class="gnathos-quote-icon"><i class="fas fa-quote-left"></i></div>
+                <div class="gnathos-testimonial-content">
+                  <div class="gnathos-testimonial-rating">
+                    <i class="fas fa-star gnathos-star-icon"></i><i class="fas fa-star gnathos-star-icon"></i><i class="fas fa-star gnathos-star-icon"></i><i class="fas fa-star gnathos-star-icon"></i><i class="fas fa-star gnathos-star-icon"></i>
+                  </div>
+                  <p class="gnathos-testimonial-text">"My jaw pain and clicking <span class="gnathos-highlight">vanished</span> after visiting Gnathos. The care was exceptional!"</p>
+                  <div class="gnathos-client-info">
+                    <div class="gnathos-client-avatar"><i class="fas fa-user"></i></div>
+                    <div class="gnathos-client-details"><h5 class="gnathos-client-name">Ravi K.</h5><p class="gnathos-client-location">Hyderabad</p></div>
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
-        </div>
-
-        <!-- Testimonial 2 -->
-        <div class="col-lg-4 col-md-6 mb-4">
-          <div class="gnathos-testimonial-card">
-            <span class="gnathos-testimonial-tag">Facial Injury</span>
-            <div class="gnathos-quote-icon"><i class="fas fa-quote-left"></i></div>
-            <div class="gnathos-testimonial-content">
-              <div class="gnathos-testimonial-rating">
-                <i class="fas fa-star gnathos-star-icon"></i>
-                <i class="fas fa-star gnathos-star-icon"></i>
-                <i class="fas fa-star gnathos-star-icon"></i>
-                <i class="fas fa-star gnathos-star-icon"></i>
-                <i class="fas fa-star gnathos-star-icon"></i>
-              </div>
-              <p class="gnathos-testimonial-text">
-                "The <span class="gnathos-highlight">best decision</span> I made for my son's facial injury. Clean clinic and highly professional team."
-              </p>
-              <div class="gnathos-client-info">
-                <div class="gnathos-client-avatar"><i class="fas fa-user"></i></div>
-                <div class="gnathos-client-details">
-                  <h5 class="gnathos-client-name">Meena T.</h5>
-                  <p class="gnathos-client-location">Secunderabad</p>
+            <div class="col-md-4 col-12 mb-4 d-none d-md-block">
+              <!-- Card 2 -->
+              <div class="gnathos-testimonial-card">
+                <span class="gnathos-testimonial-tag">Facial Injury</span>
+                <div class="gnathos-quote-icon"><i class="fas fa-quote-left"></i></div>
+                <div class="gnathos-testimonial-content">
+                  <div class="gnathos-testimonial-rating">
+                    <i class="fas fa-star gnathos-star-icon"></i><i class="fas fa-star gnathos-star-icon"></i><i class="fas fa-star gnathos-star-icon"></i><i class="fas fa-star gnathos-star-icon"></i><i class="fas fa-star gnathos-star-icon"></i>
+                  </div>
+                  <p class="gnathos-testimonial-text">"The <span class="gnathos-highlight">best decision</span> I made for my son's facial injury. Clean clinic and highly professional team."</p>
+                  <div class="gnathos-client-info">
+                    <div class="gnathos-client-avatar"><i class="fas fa-user"></i></div>
+                    <div class="gnathos-client-details"><h5 class="gnathos-client-name">Meena T.</h5><p class="gnathos-client-location">Secunderabad</p></div>
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
-        </div>
-
-        <!-- Testimonial 3 -->
-        <div class="col-lg-4 col-md-6 mb-4">
-          <div class="gnathos-testimonial-card">
-            <span class="gnathos-testimonial-tag">TMJ Specialist</span>
-            <div class="gnathos-quote-icon"><i class="fas fa-quote-left"></i></div>
-            <div class="gnathos-testimonial-content">
-              <div class="gnathos-testimonial-rating">
-                <i class="fas fa-star gnathos-star-icon"></i>
-                <i class="fas fa-star gnathos-star-icon"></i>
-                <i class="fas fa-star gnathos-star-icon"></i>
-                <i class="fas fa-star gnathos-star-icon"></i>
-                <i class="fas fa-star gnathos-star-icon"></i>
-              </div>
-              <p class="gnathos-testimonial-text">
-                "They truly have the <span class="gnathos-highlight">best maxillofacial surgeon</span> in Hyderabad. My TMJ pain is completely gone."
-              </p>
-              <div class="gnathos-client-info">
-                <div class="gnathos-client-avatar"><i class="fas fa-user"></i></div>
-                <div class="gnathos-client-details">
-                  <h5 class="gnathos-client-name">Arun M.</h5>
-                  <p class="gnathos-client-location">Chennai</p>
+            <!-- card 3 -->
+              <div class="col-md-4 col-12 mb-4 d-none d-md-block">
+              <!-- Card 2 -->
+              <div class="gnathos-testimonial-card">
+                <span class="gnathos-testimonial-tag">Facial Injury</span>
+                <div class="gnathos-quote-icon"><i class="fas fa-quote-left"></i></div>
+                <div class="gnathos-testimonial-content">
+                  <div class="gnathos-testimonial-rating">
+                    <i class="fas fa-star gnathos-star-icon"></i><i class="fas fa-star gnathos-star-icon"></i><i class="fas fa-star gnathos-star-icon"></i><i class="fas fa-star gnathos-star-icon"></i><i class="fas fa-star gnathos-star-icon"></i>
+                  </div>
+                  <p class="gnathos-testimonial-text">"The <span class="gnathos-highlight">best decision</span> I made for my son's facial injury. Clean clinic and highly professional team."</p>
+                  <div class="gnathos-client-info">
+                    <div class="gnathos-client-avatar"><i class="fas fa-user"></i></div>
+                    <div class="gnathos-client-details"><h5 class="gnathos-client-name">Meena T.</h5><p class="gnathos-client-location">Secunderabad</p></div>
+                  </div>
                 </div>
               </div>
             </div>
+
           </div>
         </div>
+
+        <!-- Slide 2 -->
+        <div class="carousel-item">
+          <div class="row justify-content-center">
+            <div class="col-md-4 col-12 mb-4">
+              <!-- Card 3 -->
+              <div class="gnathos-testimonial-card">
+                <span class="gnathos-testimonial-tag">TMJ Specialist</span>
+                <div class="gnathos-quote-icon"><i class="fas fa-quote-left"></i></div>
+                <div class="gnathos-testimonial-content">
+                  <div class="gnathos-testimonial-rating">
+                    <i class="fas fa-star gnathos-star-icon"></i><i class="fas fa-star gnathos-star-icon"></i><i class="fas fa-star gnathos-star-icon"></i><i class="fas fa-star gnathos-star-icon"></i><i class="fas fa-star gnathos-star-icon"></i>
+                  </div>
+                  <p class="gnathos-testimonial-text">"They truly have the <span class="gnathos-highlight">best maxillofacial surgeon</span> in Hyderabad. My TMJ pain is completely gone."</p>
+                  <div class="gnathos-client-info">
+                    <div class="gnathos-client-avatar"><i class="fas fa-user"></i></div>
+                    <div class="gnathos-client-details"><h5 class="gnathos-client-name">Arun M.</h5><p class="gnathos-client-location">Chennai</p></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Optional 4th Card -->
+            <div class="col-md-4 col-12 mb-4 d-none d-md-block">
+              <!-- Duplicate Card or Add New Testimonial -->
+              <div class="gnathos-testimonial-card">
+                <span class="gnathos-testimonial-tag">Jaw Surgery</span>
+                <div class="gnathos-quote-icon"><i class="fas fa-quote-left"></i></div>
+                <div class="gnathos-testimonial-content">
+                  <div class="gnathos-testimonial-rating">
+                    <i class="fas fa-star gnathos-star-icon"></i><i class="fas fa-star gnathos-star-icon"></i><i class="fas fa-star gnathos-star-icon"></i><i class="fas fa-star gnathos-star-icon"></i><i class="fas fa-star gnathos-star-icon"></i>
+                  </div>
+                  <p class="gnathos-testimonial-text">"Thanks to the Gnathos team, my jaw alignment is perfect now. Highly recommend!"</p>
+                  <div class="gnathos-client-info">
+                    <div class="gnathos-client-avatar"><i class="fas fa-user"></i></div>
+                    <div class="gnathos-client-details"><h5 class="gnathos-client-name">Neha P.</h5><p class="gnathos-client-location">Bangalore</p></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+             <div class="col-md-4 col-12 mb-4 d-none d-md-block">
+              <!-- Duplicate Card or Add New Testimonial -->
+              <div class="gnathos-testimonial-card">
+                <span class="gnathos-testimonial-tag">Jaw Surgery</span>
+                <div class="gnathos-quote-icon"><i class="fas fa-quote-left"></i></div>
+                <div class="gnathos-testimonial-content">
+                  <div class="gnathos-testimonial-rating">
+                    <i class="fas fa-star gnathos-star-icon"></i><i class="fas fa-star gnathos-star-icon"></i><i class="fas fa-star gnathos-star-icon"></i><i class="fas fa-star gnathos-star-icon"></i><i class="fas fa-star gnathos-star-icon"></i>
+                  </div>
+                  <p class="gnathos-testimonial-text">"Thanks to the Gnathos team, my jaw alignment is perfect now. Highly recommend!"</p>
+                  <div class="gnathos-client-info">
+                    <div class="gnathos-client-avatar"><i class="fas fa-user"></i></div>
+                    <div class="gnathos-client-details"><h5 class="gnathos-client-name">Neha P.</h5><p class="gnathos-client-location">Bangalore</p></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
       </div>
 
-<!-- <div class="real" style="display: block; text-align: center; ">
-     <a href="#" class="btn btn-primary" style="background-color:white !important; color: #031B4E;">View More</a>
-     </div> -->
+      <!-- Controls -->
+      <button class="carousel-control-prev" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon"></span>
+      </button>
     </div>
+  </div>
+</section>
 
-  </section>
 
 <!-- faq -->
 
@@ -1623,49 +1473,7 @@
         </div>
     </section>
 
-    <!-- <section class="mob">
-        <div class="container">
-            <div class="navbar-fixed-bottom hidden-md hidden-sm hidden-lg col-xs-12 custom-bottom-mob-nav">
-                <div class="hidden-md hidden-sm hidden-lg col-xs-12 bg-white">
-                    <div class="row no-gutters">
-                        <div class="col-3 p-0 custom-bottom-mob-nav-single-btn">
-                            <div class="d-flex justify-content-center align-items-center flex-column ">
-                                <a class="custom-bottom-mob-nav-a" href="#" data-abc="true"> <img
-                                        src="assets/icons/home.png" width="25" alt="Call" />
-                                    <br> Home
-                                </a>
-                            </div>
-                        </div>
-                        <div class="col-3 p-0 custom-bottom-mob-nav-single-btn">
-                            <div class="d-flex justify-content-center align-items-center flex-column ">
-                                <a class="custom-bottom-mob-nav-a" href="whatsapp://send?text= &amp;phone=+919599285476"
-                                    data-abc="true">
-                                    <img src="assets/icons/whatsapp.png" width="25" alt="Whatsapp" />
-                                    <br> WhatsApp &nbsp;
-                                </a>
-                            </div>
-                        </div>
-                        <div class="col-3 p-0 custom-bottom-mob-nav-single-btn">
-                            <div class="d-flex justify-content-center align-items-center flex-column ">
-                                <a class="custom-bottom-mob-nav-a" href="tel:+918377867202" data-abc="true"> <img
-                                        src="assets/icons/communication.png" width="25" alt="Call" />
-                                    <br> Call Now
-                                </a>
-                            </div>
-                        </div>
-                        <div class="col-3 p-0 custom-bottom-mob-nav-single-btn">
-                            <div class="d-flex justify-content-center align-items-center flex-column ">
-                                <a class="custom-bottom-mob-nav-a" href="#form" data-abc="true"> <img
-                                        src="assets/icons/schedule.png" width="25" alt="Call" />
-                                    <br> Book Appt.
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section> -->
+  
 
 
     <a href="https://wa.me/919599285476" class="whatsapp-float" target="_blank">
@@ -1702,9 +1510,9 @@
                         </div>
                     </div>
                     <div class="col-lg-5 d-none d-lg-block">
-                        <div class="ivy-register-image">
-                            <img src="assets/images/artms-building.jpeg" alt="gnathos" class="img-fluid">
-                        </div>
+                        <!-- <div class="ivy-register-image">
+                            <img src="assets/images/gna-logo.png" alt="gnathos" class="img-fluid">
+                        </div> -->
                     </div>
                 </div>
             </div>
@@ -1729,6 +1537,28 @@
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- slider -->
+
+    <script>
+  const row = document.getElementById('testimonialRow');
+  const nextBtn = document.getElementById('nextBtn');
+  const prevBtn = document.getElementById('prevBtn');
+
+  let scrollIndex = 0;
+  const cardWidth = row.querySelector('.testimonial-col').offsetWidth + 20; // 20 for margin
+
+  nextBtn.addEventListener('click', () => {
+    row.scrollBy({ left: cardWidth, behavior: 'smooth' });
+  });
+
+  prevBtn.addEventListener('click', () => {
+    row.scrollBy({ left: -cardWidth, behavior: 'smooth' });
+  });
+</script>
+
+    
+    
     <script>
         // Navbar scroll effect
         window.addEventListener('scroll', function () {
@@ -1829,7 +1659,7 @@
     });
 </script>
 
-
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/10.0.0/swiper-bundle.min.js"></script>
    
 <script>
