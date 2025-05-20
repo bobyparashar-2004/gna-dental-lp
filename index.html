@@ -4,15 +4,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Oncology| Artemis Hospital</title>
+    <title>Oncology| Gnathos Hospital</title>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
         rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/10.0.0/swiper-bundle.min.css" rel="stylesheet">
+     <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <style>
+
+          :root {
+      --gnathos-dark-brown: #031B4E;
+      --gnathos-light-cream: #ECF5FB;
+      --gnathos-medium-brown: #00a1be;
+    }
+
+    /* body {
+      background-color: var(--gnathos-light-cream);
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    } */
         .ivy-btn-group {
             display: flex;
             align-items: flex-start;
@@ -200,16 +213,433 @@
                 margin-bottom: 80px;
             }
         }
+
+                .navbar {
+            background-color: #f4f4f4 !important;
+        }
+
+
+
+
+        /* meet our doctors */
+
+           body {
+            background-color: var(--light-cream);
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        .doctor-section {
+            padding: 80px 0;
+        }
+        
+        .section-title {
+            text-align: center;
+            margin-bottom: 60px;
+            color: var(--dark-brown);
+            position: relative;
+        }
+        
+        .section-title:after {
+            content: '';
+            position: absolute;
+            width: 80px;
+            height: 3px;
+            background-color: var(--medium-brown);
+            bottom: -15px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+        
+        .doctor-card {
+            background: white;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 8px 20px rgba(3, 27, 78, 0.1);
+            transition: all 0.3s ease;
+            height: 100%;
+            position: relative;
+            border: none;
+        }
+        
+        .doctor-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 30px rgba(3, 27, 78, 0.18);
+        }
+        
+        .doctor-img-container {
+            height: 240px;
+            background-color: var(--light-cream);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+            position: relative;
+        }
+        
+        .doctor-img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 5px solid white;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            background-color: #e9e9e9;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+        }
+        
+        .doctor-img i {
+            font-size: 60px;
+            color: var(--dark-brown);
+        }
+        
+        .card-body {
+            padding: 30px 25px;
+            text-align: center;
+        }
+        
+        .doctor-name {
+            color: var(--dark-brown);
+            font-weight: 700;
+            margin-bottom: 10px;
+            font-size: 24px;
+            /* text-align: center;
+            display: block; */
+        }
+        
+        .doctor-specialty {
+            color: var(--medium-brown);
+            font-weight: 600;
+            margin-bottom: 20px;
+            font-size: 16px;
+        }
+        
+        .doctor-experience {
+            margin-bottom: 15px;
+            font-weight: 500;
+            font-size: 15px;
+            color: #555;
+        }
+        
+        .doctor-description {
+            color: #666;
+            margin-bottom: 25px;
+            line-height: 1.6;
+        }
+        
+        .cta-btn {
+            background-color: var(--dark-brown);
+            color: white;
+            border: none;
+            padding: 12px 25px;
+            border-radius: 30px;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            font-size: 14px;
+            box-shadow: 0 5px 15px rgba(0, 161, 190, 0.3);
+        }
+        
+        .cta-btn:hover {
+            background-color: var(--medium-brown);
+            
+            box-shadow: 0 8px 20px rgba(3, 27, 78, 0.35);
+            transform: translateY(-3px);
+        }
+        
+        .highlight {
+            background-color: rgba(0, 161, 190, 0.1);
+            padding: 2px 6px;
+            border-radius: 4px;
+            font-weight: 600;
+            color: var(--dark-brown);
+        }
+        
+        .decoration-shape {
+            position: absolute;
+            background-color: var(--medium-brown);
+            opacity: 0.1;
+            border-radius: 50%;
+            z-index: 0;
+        }
+        
+        .shape-1 {
+            width: 120px;
+            height: 120px;
+            top: -60px;
+            left: -60px;
+        }
+        
+        .shape-2 {
+            width: 80px;
+            height: 80px;
+            bottom: 30px;
+            right: -40px;
+        }
+        
+        @media (max-width: 991px) {
+            .doctor-card {
+                margin-bottom: 30px;
+            }
+        }
+
+        .badge-experience {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            background-color: var(--dark-brown);
+            color: white;
+            padding: 8px 15px;
+            border-radius: 20px;
+            font-weight: 600;
+            z-index: 1;
+            box-shadow: 0 4px 10px rgba(3, 27, 78, 0.2);
+        }
+        
+        .specialist-tag {
+            display: inline-block;
+            background-color: rgba(3, 27, 78, 0.08);
+            color: var(--dark-brown);
+            padding: 5px 12px;
+            border-radius: 20px;
+            font-size: 13px;
+            font-weight: 600;
+            margin: 0 5px 10px 0;
+        }
+        
+        .profile-divider {
+            width: 30%;
+            margin: 15px auto;
+            border-top: 2px dashed rgba(0, 161, 190, 0.2);
+        }
+
+
+        /* testimonia */
+
+       
+    .gnathos-testimonial-section {
+      padding: 80px 0;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .gnathos-section-title {
+      text-align: center;
+      margin-bottom: 60px;
+      /* color: var(--gnathos-medium-brown); */
+      color:white;
+      position: relative;
+      font-weight: 700;
+      font-size: 36px;
+    }
+
+    .gnathos-section-title:after {
+      content: '';
+      position: absolute;
+      width: 80px;
+      height: 3px;
+      background-color: var(--gnathos-medium-brown);
+      bottom: -15px;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+
+    .gnathos-section-subtitle {
+      text-align: center;
+      color: var(--gnathos-medium-brown);
+      font-size: 20px;
+      margin-top: -30px;
+      margin-bottom: 50px;
+      font-style: italic;
+    }
+
+    .gnathos-testimonial-card {
+      background: white;
+      border-radius: 15px;
+      overflow: hidden;
+      box-shadow: 0 8px 20px rgba(3, 27, 78, 0.1);
+      transition: all 0.3s ease;
+      height: 100%;
+      position: relative;
+      border: none;
+      padding: 30px;
+    }
+
+    .gnathos-testimonial-card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 15px 30px rgba(3, 27, 78, 0.18);
+    }
+
+    .gnathos-quote-icon {
+      color: var(--gnathos-medium-brown);
+      opacity: 0.15;
+      font-size: 60px;
+      position: absolute;
+      top: 20px;
+      left: 20px;
+    }
+
+    .gnathos-testimonial-content {
+      position: relative;
+      z-index: 1;
+    }
+
+    .gnathos-testimonial-text {
+      color: var(--gnathos-dark-brown);
+      font-size: 18px;
+      line-height: 1.7;
+      margin-bottom: 20px;
+      font-style: italic;
+    }
+
+    .gnathos-client-info {
+      display: flex;
+      align-items: center;
+      margin-top: 25px;
+      border-top: 1px dashed rgba(0, 161, 190, 0.2);
+      padding-top: 20px;
+    }
+
+    .gnathos-client-avatar {
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      background-color: var(--gnathos-light-cream);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-right: 15px;
+      border: 2px solid var(--gnathos-medium-brown);
+      box-shadow: 0 4px 10px rgba(0, 161, 190, 0.2);
+    }
+
+    .gnathos-client-avatar i {
+      color: var(--gnathos-medium-brown);
+      font-size: 24px;
+    }
+
+    .gnathos-client-details {
+      flex: 1;
+    }
+
+    .gnathos-client-name {
+      color: var(--gnathos-dark-brown);
+      font-weight: 700;
+      margin-bottom: 0;
+      font-size: 17px;
+    }
+
+    .gnathos-client-location {
+      color: var(--gnathos-medium-brown);
+      font-size: 14px;
+    }
+
+    .gnathos-highlight {
+      font-weight: 700;
+      color: var(--gnathos-medium-brown);
+    }
+
+    .gnathos-decoration-shape {
+      position: absolute;
+      background-color: var(--gnathos-medium-brown);
+      opacity: 0.05;
+      border-radius: 50%;
+      z-index: 0;
+    }
+
+    .gnathos-shape-1 {
+      width: 200px;
+      height: 200px;
+      top: 50px;
+      left: -100px;
+    }
+
+    .gnathos-shape-2 {
+      width: 300px;
+      height: 300px;
+      bottom: -150px;
+      right: -150px;
+    }
+
+    .gnathos-testimonial-rating {
+      margin-bottom: 15px;
+    }
+
+    .gnathos-star-icon {
+      color: #FFC107;
+      font-size: 16px;
+      margin-right: 2px;
+    }
+
+    .gnathos-testimonial-tag {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      background-color: var(--gnathos-dark-brown);
+      color: white;
+      padding: 5px 12px;
+      border-radius: 20px;
+      font-size: 12px;
+      font-weight: 600;
+      z-index: 2;
+    }
+
+    @media (max-width: 991px) {
+      .gnathos-testimonial-card {
+        margin-bottom: 30px;
+      }
+    }
+
+    @media (max-width: 767px) {
+      .gnathos-section-title {
+        font-size: 30px;
+      }
+
+      .gnathos-testimonial-text {
+        font-size: 16px;
+      }
+    }
+
+    .gnathos-view-more-btn {
+      display: block;
+      width: fit-content;
+      margin: 40px auto 0;
+      background-color: var(--gnathos-medium-brown) ;
+      color: white;
+      border: none;
+      padding: 12px 30px;
+      border-radius: 30px;
+      font-weight: 600;
+      transition: all 0.3s ease;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      font-size: 14px;
+      box-shadow: 0 5px 15px rgba(0, 161, 190, 0.3) !important;
+    }
+
+    .gnathos-view-more-btn:hover {
+      background-color: var(--gnathos-dark-brown);
+      box-shadow: 0 8px 20px rgba(3, 27, 78, 0.35) !important;
+      transform: translateY(-3px);
+      color: white !important;
+    }
+    </style>
+
     </style>
 
 </head>
 
 <body>
+
+    
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg">
         <div class="container">
             <a class="navbar-brand" href="#">
-                <img src="assets/icons/artemis-logo.png" alt="Artemis Hospital">
+                <img src="assets/images/gna-logo.png" alt="Gnathos Hospital">
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -248,21 +678,25 @@
         <div class="container">
             <div class="row align-items-center">
                 <div class="col-lg-6 hero-content">
-                    <h1 class="hero-title">Best <span>Hospital for Cancer Care
-
+                    <h1 class="hero-title">Get Advanced Maxillofacial Treatment  <span>in Hyderabad
                         </span></h1>
-                    <p class="hero-subtitle">Expert Cancer Care Starts Here! Get Comprehensive Cancer Care From Leading
-                        Specialists
+                    <p class="hero-subtitle">Expert Face, Jaw & TMJ Care Starts Here! Book a Consultation with the Best Maxillofacial Surgeon in India
+
                     </p>
                     <div class="hero-features">
                         <div class="hero-feature">
                             <i class="bi bi-check-circle-fill"></i>
-                            <span>24/7 Emergency Care </span>
+                            <span>24/7 Emergency Facial Trauma Care </span>
                         </div>
                         <div class="hero-feature">
                             <i class="bi bi-check-circle-fill"></i>
-                            <span>World-Class Specialists</span>
+                            <span>Best TMJ Specialist in India</span>
                         </div>
+                        <div class="hero-feature">
+                            <i class="bi bi-check-circle-fill"></i>
+                            <span>100% Personalized Care Plans</span>
+                        </div>
+                        
                     </div>
                 </div>
                 <div class="col-lg-5 offset-lg-1">
@@ -313,76 +747,82 @@
 
     <!-- Original Heart Section -->
     <section class="heart-section">
-        <div class="stat-container">
-            <div class="row">
-                <div class="col-lg-3 col-md-6">
-                    <div class="stat-item">
-                        <i class="bi bi-stars stat-icon"></i>
-                        <div class="stat-value">
-                            1,00,000+
-                        </div>
-                        <div class="stat-label">Life Touched</div>
-                    </div>
-                </div>
+   <div class="stat-container">
+    <div class="row justify-content-center text-center">
+    <div class="col-lg-2 col-md-4 col-6 mb-4 d-flex">
+        <div class="stat-item d-flex flex-column justify-content-center align-items-center w-100">
+            <i class="bi bi-stars stat-icon"></i>
+            <div class="stat-value">1 Lakh+</div>
+            <div class="stat-label">Faces Transformed with Precision</div>
+        </div>
+    </div>
 
-                <div class="col-lg-3 col-md-6">
-                    <div class="stat-item">
-                        <i class="bi bi-building stat-icon"></i>
-                        <div class="stat-value">40+</div>
-                        <div class="stat-label">Super Specialities</div>
-                    </div>
-                </div>
+    <div class="col-lg-2 col-md-4 col-6 mb-4 d-flex">
+        <div class="stat-item d-flex flex-column justify-content-center align-items-center w-100">
+            <i class="bi bi-building stat-icon"></i>
+            <div class="stat-value">20+</div>
+            <div class="stat-label">of Excellence in Maxillofacial Surgery</div>
+        </div>
+    </div>
 
-                <div class="col-lg-3 col-md-6">
-                    <div class="stat-item">
-                        <i class="bi bi-hospital stat-icon"></i>
-                        <div class="stat-value">750+</div>
-                        <div class="stat-label">Beds</div>
-                    </div>
-                </div>
+    <div class="col-lg-2 col-md-4 col-6 mb-4 d-flex">
+        <div class="stat-item d-flex flex-column justify-content-center align-items-center w-100">
+            <i class="bi bi-hospital stat-icon"></i>
+            <div class="stat-value">5k+</div>
+            <div class="stat-label">TMJ Disorder Cases Successfully Treated</div>
+        </div>
+    </div>
+
+    <div class="col-lg-2 col-md-4 col-6 mb-4 d-flex">
+        <div class="stat-item d-flex flex-column justify-content-center align-items-center w-100">
+            <i class="bi bi-person-badge stat-icon"></i>
+            <div class="stat-value">400+</div>
+            <div class="stat-label">Speciality Doctors</div>
+        </div>
+    </div>
+
+    <div class="col-lg-2 col-md-4 col-6 mb-4 d-flex">
+        <div class="stat-item d-flex flex-column justify-content-center align-items-center w-100">
+            <i class="bi bi-person-badge stat-icon"></i>
+            <div class="stat-value">4.9★ </div>
+            <div class="stat-label">Patient Satisfaction Across India</div>
+        </div>
+    </div>
+</div>
+
+</div>
 
 
-
-                <div class="col-lg-3 col-md-6">
-                    <div class="stat-item">
-                        <i class="bi bi-person-badge stat-icon"></i>
-                        <div class="stat-value">400+</div>
-                        <div class="stat-label">Speciality Doctors</div>
-                    </div>
-                </div>
+    <!-- CTA section remains untouched -->
+    <div class="cta-container">
+        <div class="row">
+            <div class="col-lg-8">
+                <h3 class="cta-title">Your Journey to a Confident Smile Starts Now</h3>
+                <p class="cta-subtitle">Book your consultation with the best oral and maxillofacial surgeon in India. Whether it's jaw surgery, facial reconstruction, or TMJ disorder, we are here to help you heal and shine.</p>
+                <a href="#" class="btn btn-primary">Book an Appointment</a>
             </div>
         </div>
+    </div>
+</section>
 
-        <div class="cta-container">
-            <div class="row">
-                <div class="col-lg-8">
-                    <h3 class="cta-title">Your Journey to Cancer Care Starts Here</h3>
-                    <p class="cta-subtitle">Schedule a consultation with our expert oncologists and surgeons, and take
-                        the first step towards better cancer care.
-                    </p>
-                    <a href="#" class="btn btn-primary">Book a Consultation</a>
-                </div>
-            </div>
-            <!-- <img src="assets/icons/150x150.png" width="250px"  alt="Heart illustration" class="heart-graphic"> -->
-        </div>
-
-    </section>
     <section class="ivy-intro-section ">
         <div class="container">
             <div class="row align-items-center">
                 <div class="col-lg-6">
                     <div class="ivy-intro-content">
-                        <h1 class="ivy-intro-title">Artemis Hospital: Your Trusted Partner for Cancer Excellence
+                        <h1 class="ivy-intro-title">Gnathos Face – Best Oral & Maxillofacial Surgery Centre in Hyderabad
                             </span></h1>
                         <div class="ivy-intro-text">
                             <p>
-                                For top-tier cancer care, experience and expertise are key. Artemis Hospital is proud to offer unparalleled expertise in the diagnosis and treatment of cancer. Our team comprises leading specialists in the field, complemented by state-of-the-art facilities, ensuring advanced care for a wide range of cancer conditions for adults and children. We are a leading best cancer hospital in India and best cancer hospital in gurgaon.
-                            </p>
-                        </div>
+                               When it comes to facial, jaw, and TMJ treatments, precision and expertise make all the difference. At Gnathos Face, we bring over two decades of experience in maxillofacial surgery and TMJ care. Our team is led by the best oral and maxillofacial surgeons in India, offering personalized solutions using advanced technology and patient-first care. </p>
+                            <p>Whether you're dealing with facial trauma, jaw deformities, or chronic TMJ pain — you're in the hands of experts trusted by thousands across India.</p>
+                            <p>We’re proud to be one of the most advanced and trusted maxillofacial centers in Hyderabad, delivering confident smiles and long-lasting relief.</p>
+                             
+                         </div>
                         <div class="ivy-intro-cta">
-                            <p class="ivy-intro-consult">Consult with our
-                                <span class="heart-specialists">CANCER SPECIALISTS
-                                </span> today!
+                            <p class="ivy-intro-consult">Consult our  
+                                <span class="heart-specialists">MAXILLOFACIAL SPECIALISTS
+                                </span> today to take the first step toward pain-free, aesthetic recovery.
                             </p>
                             <a href="#" class="ivy-appointment-btn">Book an Appointment</a>
                         </div>
@@ -395,7 +835,7 @@
                                 <img src="assets/icons/1.png" alt="Advanced Treatment Options">
                             </div>
                             <div class="ivy-feature-content">
-                                <h3 class="ivy-feature-title">Advanced Treatment Options for Your Cancer Needs
+                                <h3 class="ivy-feature-title">World-Class Treatment & Expertise
 
                                 </h3>
                             </div>
@@ -406,7 +846,8 @@
                                 <img src="assets/icons/2.png" alt="Comprehensive Care">
                             </div>
                             <div class="ivy-feature-content">
-                                <h3 class="ivy-feature-title">Comprehensive Care for a Wide Range of Conditions</h3>
+                                <h3 class="ivy-feature-title">
+              Multidisciplinary Surgical Team</h3>
                             </div>
                         </div>
 
@@ -415,7 +856,8 @@
                                 <img src="assets/icons/3.png" alt="State-of-the-Art Facilities">
                             </div>
                             <div class="ivy-feature-content">
-                                <h3 class="ivy-feature-title"> State-of-the-Art Facilities and Technology</h3>
+                                <h3 class="ivy-feature-title">
+                   State-of-the-Art Digital Technology</h3>
                             </div>
                         </div>
                     </div>
@@ -428,15 +870,16 @@
   
 
 
-    <section class="doctors-showcase">
+    <!-- <section class="doctors-showcase">
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-lg-8 text-center">
                     <div class="doctors-showcase-header">
                         
-                        <h2 class="doctors-showcase-heading">Meet Our Distinguished Cancer Specialists</h2>
-                        <p class="doctors-showcase-intro">Bringing together years of specialized experience and advanced
-                            training to provide exceptional cancer care with compassion and dedication.
+                        <h2 class="doctors-showcase-heading">Talk to Our Specialists Today
+</h2>
+<p class="doctors-showcase-intro mb-2">Your face deserves the best. Let’s give it the care it needs</p>
+                        <p class="doctors-showcase-intro">Meet our experienced consultants — renowned across India for their expertise in facial, jaw, and TMJ treatments.
                         </p>
                     </div>
                 </div>
@@ -444,163 +887,6 @@
 
             <div class="swiper doctors-specialists-swiper">
                 <div class="swiper-wrapper">
-                    <!-- Specialist 1 -->
-                    <div class="swiper-slide">
-                        <div class="doctor-profile">
-                            <div class="doctor-portrait">
-                                <div class="doctor-portrait-wrapper">
-                                    <img src="assets/images/praveen.png" alt="Dr. Tariq">
-                                </div>
-                                <div class="doctor-decoration"></div>
-                            </div>
-                            <div class="doctor-details">
-                                <h3 class="doctor-name">Dr. Parveen Yadav</h3>
-                                <div class="doctor-role">Chief & Sr. Consultant</div>
-                                <div class="doctor-btn-group">
-                                    <a href="#form" class="doctor-consult-btn">Book Appointment</a>
-                                    <a href="https://wa.me/919599285476" class="doctor-whatsapp-btn">
-                                        <i class="bi bi-whatsapp"></i>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Specialist 2 -->
-                    <!-- <div class="swiper-slide">
-                        <div class="doctor-profile">
-                            <div class="doctor-portrait">
-                                <div class="doctor-portrait-wrapper">
-                                    <img src="assets/images/g" alt="Dr. Mukesh">
-                                </div>
-                                <div class="doctor-decoration"></div>
-                            </div>
-                            <div class="doctor-details">
-                                <h3 class="doctor-name">Dr. Mukesh Patekar</h3>
-                                <div class="doctor-role">Unit Head - Medical Oncology</div>
-                                <div class="doctor-btn-group">
-                                    <a href="#form" class="doctor-consult-btn">Book Appointment</a>
-                                    <a href="https://wa.me/919599285476" class="doctor-whatsapp-btn">
-                                        <i class="bi bi-whatsapp"></i>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div> -->
-
-                    <!-- Specialist 3 -->
-                    <div class="swiper-slide">
-                        <div class="doctor-profile">
-                            <div class="doctor-portrait">
-                                <div class="doctor-portrait-wrapper">
-                                    <img src="assets/images/lalit.png" alt="Dr. lalit">
-                                </div>
-                                <div class="doctor-decoration"></div>
-                            </div>
-                            <div class="doctor-details">
-                                <h3 class="doctor-name">Dr. Lalit Kumar</h3>
-                                <div class="doctor-role">Chairperson - Oncology & BMT</div>
-                                <div class="doctor-btn-group">
-                                    <a href="#form" class="doctor-consult-btn">Book Appointment</a>
-                                    <a href="https://wa.me/919599285476" class="doctor-whatsapp-btn">
-                                        <i class="bi bi-whatsapp"></i>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Specialist 4 -->
-                    <div class="swiper-slide">
-                        <div class="doctor-profile">
-                            <div class="doctor-portrait">
-                                <div class="doctor-portrait-wrapper">
-                                    <img src="assets/images/tapan.png" alt="Dr. Tapan">
-                                </div>
-                                <div class="doctor-decoration"></div>
-                            </div>
-                            <div class="doctor-details">
-                                <h3 class="doctor-name">Dr. Tapan Singh Chauhan</h3>
-                                <div class="doctor-role">Sr. Consultant - Surgical Oncology, Robotics, GI & HPB,
-                                    Gynae & Peritoneal Surface Oncology</div>
-                                <div class="doctor-btn-group">
-                                    <a href="#form" class="doctor-consult-btn">Book Appointment</a>
-                                    <a href="https://wa.me/919599285476" class="doctor-whatsapp-btn">
-                                        <i class="bi bi-whatsapp"></i>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Specialist 5 -->
-                    <div class="swiper-slide">
-                        <div class="doctor-profile">
-                            <div class="doctor-portrait">
-                                <div class="doctor-portrait-wrapper">
-                                    <img src="assets/images/subodh.png" alt="Dr. aditya">
-                                </div>
-                                <div class="doctor-decoration"></div>
-                            </div>
-                            <div class="doctor-details">
-                                <h3 class="doctor-name">Dr. Subodh Chandra Pande</h3>
-                                <div class="doctor-role">Chief - Radiation Oncology & Co-Chief - Cyberknife Centre</div>
-                                <div class="doctor-btn-group">
-                                    <a href="#form" class="doctor-consult-btn">Book Appointment</a>
-                                    <a href="https://wa.me/919599285476" class="doctor-whatsapp-btn">
-                                        <i class="bi bi-whatsapp"></i>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Specialist 6 -->
-                    <div class="swiper-slide">
-                        <div class="doctor-profile">
-                            <div class="doctor-portrait">
-                                <div class="doctor-portrait-wrapper">
-                                    <img src="assets/images/biswa.png" alt="Dr. biswajyoti">
-                                </div>
-                                <div class="doctor-decoration"></div>
-                            </div>
-                            <div class="doctor-details">
-                                <h3 class="doctor-name">Dr. Biswajyoti Hazarika</h3>
-                                <div class="doctor-role">Chief - Head & Neck Surgery</div>
-                                <div class="doctor-btn-group">
-                                    <a href="#form" class="doctor-consult-btn">Book Appointment</a>
-                                    <a href="https://wa.me/919599285476" class="doctor-whatsapp-btn">
-                                        <i class="bi bi-whatsapp"></i>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Specialist 7 -->
-                    <div class="swiper-slide">
-                        <div class="doctor-profile">
-                            <div class="doctor-portrait">
-                                <div class="doctor-portrait-wrapper">
-                                    <img src="assets/images/deepak.png" alt="Dr. sk rajan">
-                                </div>
-                                <div class="doctor-decoration"></div>
-                            </div>
-                            <div class="doctor-details">
-                                <h3 class="doctor-name">Dr. Deepak Jha</h3>
-                                <div class="doctor-role">hief - Breast Surgery & Sr. Consultant : Surgical
-                                    Oncology</div>
-                                <div class="doctor-btn-group">
-                                    <a href="#form" class="doctor-consult-btn">Book Appointment</a>
-                                    <a href="https://wa.me/919599285476" class="doctor-whatsapp-btn">
-                                        <i class="bi bi-whatsapp"></i>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Specialist 8 -->
                     <div class="swiper-slide">
                         <div class="doctor-profile">
                             <div class="doctor-portrait">
@@ -642,8 +928,6 @@
                             </div>
                         </div>
                     </div>
-
-
                     <div class="swiper-slide">
                         <div class="doctor-profile">
                             <div class="doctor-portrait">
@@ -663,44 +947,87 @@
                                 </div>
                             </div>
                         </div>
-                    </div>
-
-
-                    <!-- <div class="swiper-slide">
-                        <div class="doctor-profile">
-                            <div class="doctor-portrait">
-                                <div class="doctor-portrait-wrapper">
-                                    <img src="assets/images/" alt="Dr. Devendra Singh Solanki">
-                                </div>
-                                <div class="doctor-decoration"></div>
-                            </div>
-                            <div class="doctor-details">
-                                <h3 class="doctor-name">Dr. Sandeep Goel</h3>
-                                <div class="doctor-role">Sr. Consultant</div>
-                                <div class="doctor-btn-group">
-                                    <a href="#form" class="doctor-consult-btn">Book Appointment</a>
-                                    <a href="https://wa.me/919599285476" class="doctor-whatsapp-btn">
-                                        <i class="bi bi-whatsapp"></i>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div> -->
-
-
-                   
-
-
-
-
-                   
-
+                    </div>   
+                    </div> 
                 </div>
-                <!-- Navigation buttons -->
+              
                 <div class="swiper-button-next"></div>
                 <div class="swiper-button-prev"></div>
-                <!-- Pagination -->
+               
                 <div class="swiper-pagination"></div>
+            </div>
+        </div>
+    </section> -->
+
+
+     <section class="doctor-section">
+        <div class="container">
+            <h2 class="section-title">Our Expert Specialists</h2>
+            
+            <div class="row">
+                <!-- Dr. Suresh -->
+                <div class="col-lg-6 mb-4">
+                    <div class="doctor-card">
+                        <span class="badge-experience">20+ Years Experience</span>
+                        <div class="doctor-img-container">
+                            <div class="doctor-img">
+                                <i class="fas fa-user-md"></i>
+                            </div>
+                            <div class="decoration-shape shape-1"></div>
+                            <div class="decoration-shape shape-2"></div>
+                        </div>
+                        <div class="card-body">
+                            <div class="dr-name" style="text-align:center; display:block !important;">
+                            <h3 class="doctor-name">Dr. Suresh</h3>
+                            </div>
+                            <p class="doctor-specialty">Senior Consultant and TMJ Specialist</p>
+                            
+                            <div class="specialist-tag">TMJ Specialist</div>
+                            <div class="specialist-tag">Complex Jaw Surgeries</div>
+                            
+                            <hr class="profile-divider">
+                            
+                            <p class="doctor-description">
+                                With over two decades of clinical excellence, Dr. Suresh is one of the <span class="highlight">best oral and maxillofacial surgeons in India</span>. Specializing in complex jaw surgeries and TMJ disorders, he is known for his precision, patient-centered care, and outstanding results.
+                            </p>
+                            
+                            <button class="cta-btn">
+                                <i class="far fa-calendar-alt me-2"></i> Schedule Your Consultation
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Dr. Navatha Mortha -->
+                <div class="col-lg-6 mb-4">
+                    <div class="doctor-card">
+                        <span class="badge-experience">15+ Years Experience</span>
+                        <div class="doctor-img-container">
+                            <div class="doctor-img">
+                                <i class="fas fa-user-md"></i>
+                            </div>
+                            <div class="decoration-shape shape-1"></div>
+                            <div class="decoration-shape shape-2"></div>
+                        </div>
+                        <div class="card-body">
+                            <h3 class="doctor-name">Dr. Navatha Mortha</h3>
+                            <p class="doctor-specialty">Senior Consultant and TMJ Specialist</p>
+                            
+                            <div class="specialist-tag">TMJ Specialist</div>
+                            <div class="specialist-tag">Facial Trauma</div>
+                            
+                            <hr class="profile-divider">
+                            
+                            <p class="doctor-description">
+                                A dedicated and compassionate specialist, Dr. Navatha brings 15+ years of experience in <span class="highlight">oral and maxillofacial surgery</span>. She is highly regarded for her success in treating facial trauma and TMJ conditions with a holistic and minimally invasive approach.
+                            </p>
+                            
+                            <button class="cta-btn">
+                                <i class="far fa-calendar-alt me-2"></i> Schedule Your Consultation
+                            </button>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
@@ -708,221 +1035,261 @@
 
 
 
-    <section class="cardio_treatments_section">
+    <section class="cardio_treatments_section"  style="background-color: #304673;">
 
         <div class="container">
             <!-- Section Header -->
             <div class="cardio_treatment_header">
-                <h2 class="cardio_treatment_title">Comprehensive Cancer Services Tailored to Your Needs </h2>
-                <p class="cardio_treatment_subtitle">Our experienced doctors and surgeons at Artemis Hospital, a leading best cancer hospital in India and best cancer hospital in gurgaon, who specialize in different areas of oncology, diagnose and treat a wide range of conditions.
-
-
-                    <span class="hospital_name">Artemis Hospital</span>, who specialize in different areas of oncology,
-                    diagnose and treat a wide range of conditions.
+                <h2 class="cardio_treatment_title" style="color:white">Complete Care for Your Face, Jaw & TMJ — All in One Place
+</h2>
+                <p class="cardio_treatment_subtitle">Our expert surgeons at Gnathos Face offer advanced, personalized care for your face, jaw, and TMJ—restoring function, comfort, and confidence with every treatment.
+                    <!-- <span class="hospital_name">Artemis Hospital</span>, who specialize in different areas of oncology,
+                    diagnose and treat a wide range of conditions. -->
                 </p>
             </div>
 
+
             <!-- Treatment Cards -->
-            <div class="cardio_treatment_cards_container">
-                <div class="row g-4">
-                    <!-- Stroke Care -->
-                    <div class="col-lg-3 col-md-4 col-sm-4 col-4">
-                        <div class="cardio_treatment_card">
-                            <div class="cardio_icon_wrapper">
-                                <div class="cardio_icon">
-                                    <img src="assets/icons/25.png" alt="Stroke Care">
-                                </div>
-                            </div>
-                            <h3 class="cardio_treatment_name">Medical Oncology </h3>
-                            <!-- <p class="cardio_treatment_description">
-                                Providing timely and effective treatment for stroke patients to minimize brain damage and disability.
-                            </p> -->
-                        </div>
-                    </div>
-
-                    <!-- Epilepsy Management -->
-                    <div class="col-lg-3 col-md-4 col-sm-4 col-4">
-                        <div class="cardio_treatment_card">
-                            <div class="cardio_icon_wrapper">
-                                <div class="cardio_icon">
-                                    <img src="assets/icons/26.png" alt="Epilepsy Management">
-                                </div>
-                            </div>
-                            <h3 class="cardio_treatment_name">Surgical Oncology</h3>
-                            <!-- <p class="cardio_treatment_description">
-                                Offering comprehensive care for patients with epilepsy, including diagnosis, medication management, and surgical options.
-                            </p> -->
-                        </div>
-                    </div>
-
-                    <!-- Headache and Migraine Treatment -->
-                    <div class="col-lg-3 col-md-4 col-sm-4 col-4">
-                        <div class="cardio_treatment_card">
-                            <div class="cardio_icon_wrapper">
-                                <div class="cardio_icon">
-                                    <img src="assets/icons/27.png" alt="Headache and Migraine Treatment">
-                                </div>
-                            </div>
-                            <h3 class="cardio_treatment_name">Radiation Oncology</h3>
-                            <!-- <p class="cardio_treatment_description">
-                                Diagnosing and treating various types of headaches, including migraines, cluster headaches, and tension headaches.
-                            </p> -->
-                        </div>
-                    </div>
-
-                    <!-- Spine Disorders -->
-                    <div class="col-lg-3 col-md-4 col-4 mx-auto">
-                        <div class="cardio_treatment_card">
-                            <div class="cardio_icon_wrapper">
-                                <div class="cardio_icon">
-                                    <img src="assets/icons/28.png" alt="Spine Disorders">
-                                </div>
-                            </div>
-                            <h3 class="cardio_treatment_name">Palliative Care</h3>
-                            <!-- <p class="cardio_treatment_description">
-                                Diagnosis and treatment of various spinal conditions, including disc herniation, spinal stenosis, and degenerative disc disease.
-                            </p> -->
-                        </div>
+           <div class="cardio_treatment_cards_container">
+    <div class="row g-4">
+        <!-- Facial Trauma Surgery -->
+        <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12">
+            <div class="cardio_treatment_card">
+                <div class="cardio_icon_wrapper">
+                    <div class="cardio_icon">
+                        <img src="assets/icons/25.png" alt="Stroke Care">
                     </div>
                 </div>
-
-                <!-- Second Row with Centered Treatments -->
-                <!-- <div class="row g-4 justify-content-center"> -->
-
+                <h3 class="cardio_treatment_name"> Facial Trauma Surgery</h3>
             </div>
+        </div>
+
+        <!-- TMJ Disorder Treatment -->
+        <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12">
+            <div class="cardio_treatment_card">
+                <div class="cardio_icon_wrapper">
+                    <div class="cardio_icon">
+                        <img src="assets/icons/26.png" alt="Epilepsy Management">
+                    </div>
+                </div>
+                <h3 class="cardio_treatment_name">TMJ Disorder Treatment</h3>
+            </div>
+        </div>
+
+        <!-- Orthognathic (Jaw) Surgery -->
+        <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12">
+            <div class="cardio_treatment_card">
+                <div class="cardio_icon_wrapper">
+                    <div class="cardio_icon">
+                        <img src="assets/icons/27.png" alt="Headache and Migraine Treatment">
+                    </div>
+                </div>
+                <h3 class="cardio_treatment_name">Orthognathic (Jaw) Surgery</h3>
+            </div>
+        </div>
+
+        <!-- Facial Cosmetic Surgery -->
+        <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12">
+            <div class="cardio_treatment_card">
+                <div class="cardio_icon_wrapper">
+                    <div class="cardio_icon">
+                        <img src="assets/icons/28.png" alt="Spine Disorders">
+                    </div>
+                </div>
+                <h3 class="cardio_treatment_name">Facial Cosmetic Surgery</h3>
+            </div>
+        </div>
+
+
+   
+        <!-- Obstructive Sleep Apnea Surgery -->
+        <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12">
+            <div class="cardio_treatment_card">
+                <div class="cardio_icon_wrapper">
+                    <div class="cardio_icon">
+                        <img src="assets/icons/25.png" alt="Stroke Care">
+                    </div>
+                </div>
+                <h3 class="cardio_treatment_name"> Obstructive Sleep Apnea Surgery</h3>
+            </div>
+        </div>
+
+        <!-- Oral Cancer Management -->
+        <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12">
+            <div class="cardio_treatment_card">
+                <div class="cardio_icon_wrapper">
+                    <div class="cardio_icon">
+                        <img src="assets/icons/26.png" alt="Epilepsy Management">
+                    </div>
+                </div>
+                <h3 class="cardio_treatment_name">Oral Cancer Management</h3>
+            </div>
+        </div>
+
+        <!-- Cysts & Tumors of the Jaw -->
+        <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12">
+            <div class="cardio_treatment_card">
+                <div class="cardio_icon_wrapper">
+                    <div class="cardio_icon">
+                        <img src="assets/icons/27.png" alt="Headache and Migraine Treatment">
+                    </div>
+                </div>
+                <h3 class="cardio_treatment_name">Cysts & Tumors of the Jaw</h3>
+            </div>
+        </div>
+
+        <!-- Reconstructive Jaw Surgery -->
+        <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12">
+            <div class="cardio_treatment_card">
+                <div class="cardio_icon_wrapper">
+                    <div class="cardio_icon">
+                        <img src="assets/icons/28.png" alt="Spine Disorders">
+                    </div>
+                </div>
+                <h3 class="cardio_treatment_name">Reconstructive Jaw Surgery</h3>
+            </div>
+       
+    </div>
+
+        </div>
+</div>
+
 
         </div>
     </section>
 
-
-    <section class="why-choose-section py-5">
-        <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-lg-8 text-center">
-                    <div class="section-header">
-                        <span class="section-subtitle">Our Commitment</span>
-                        <h2 class="section-title">Choose Artemis Hospital for Your Cancer Care
-                        </h2>
-                        <p class="section-description">We combine cutting-edge technology with compassionate care to provide the best treatment experience for our patients. As the best cancer hospital in India, we ensure top-tier care.
-
-
-                        </p>
-
-
-                    </div>
+   <section class="why-choose-section py-5">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-8 text-center">
+                <div class="section-header">
+                    <!-- <span class="section-subtitle">Our Commitment</span> -->
+                    <h2 class="section-title">Why Choose Gnathos Face?</h2>
+                    <p class="section-description">
+                        When it comes to your face, experience and precision matter. With a legacy of trust and excellence, we offer world-class maxillofacial care led by the best surgeons in India.
+                    </p>
                 </div>
             </div>
-
-            <div class="why-choose-container">
-                <div class="row align-items-center">
-                    <div class="col-lg-6">
-                        <div class="why-choose-image">
-                            <div class="image-container">
-                                <img src="assets/images/why-choose-us.png" alt="Hospital Care" class="main-image">
-                                <div class="experience-badge">
-                                    <span class="years" style="margin-left: 10px;">25+</span>
-                                    <span class="text" style="margin-left: 10px;">Years of Excellence</span>
-                                </div>
-                            </div>
-                            <div class="stats-card">
-                                <div class="stats-item">
-                                    <div class="stats-icon">
-                                        <i class="bi bi-heart-pulse"></i>
-                                    </div>
-                                    <div class="stats-info">
-                                        <h4>1,00,000+</h4>
-                                        <p>Oncology Surgeries</p>
-                                    </div>
-                                </div>
-                                <div class="stats-item">
-                                    <div class="stats-icon">
-                                        <i class="bi bi-person-check"></i>
-                                    </div>
-                                    <div class="stats-info">
-                                        <h4>98%</h4>
-                                        <p>Patient Satisfaction</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-6">
-                        <div class="why-choose-content">
-                            <div class="choose-item">
-                                <div class="choose-icon">
-                                    <div class="icon-shape">
-                                        <i class="bi bi-award"></i>
-                                    </div>
-                                </div>
-                                <div class="choose-text">
-                                    <h3>Expert Cancer Team</h3>
-                                    <p> Our team includes highly skilled oncologists, surgeons, radiation oncologists,
-                                        and specialists with expertise in various cancer subspecialties.
-                                    </p>
-
-                                </div>
-                            </div>
-
-                            <div class="choose-item">
-                                <div class="choose-icon">
-                                    <div class="icon-shape">
-                                        <i class="bi bi-heart-pulse-fill"></i>
-                                    </div>
-                                </div>
-                                <div class="choose-text">
-
-                                    <h3>Advanced Technology</h3>
-                                    <p>We utilize the latest advancements in cancer technology for accurate diagnosis
-                                        and effective treatment.
-
-                                    </p>
-
-                                </div>
-                            </div>
-
-                            <div class="choose-item">
-                                <div class="choose-icon">
-                                    <div class="icon-shape">
-                                        <i class="bi bi-clipboard2-pulse"></i>
-                                    </div>
-                                </div>
-                                <div class="choose-text">
-                                    <h3>Personalized Treatment Plans</h3>
-                                    <p>We develop individualized treatment plans tailored to each patient's specific
-                                        needs and goals.
-
-                                    </p>
-                                </div>
-                            </div>
-
-                            <div class="choose-item">
-                                <div class="choose-icon">
-                                    <div class="icon-shape">
-                                        <i class="bi bi-shield-check"></i>
-                                    </div>
-                                </div>
-                                <div class="choose-text">
-                                    <h3>Comprehensive Care</h3>
-                                    <p>From diagnosis to treatment and support, we provide comprehensive care to support
-                                        your recovery journey.
-
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-
         </div>
 
-    </section>
+        <div class="why-choose-container">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <div class="why-choose-image">
+                        <div class="image-container">
+                            <img src="assets/images/why-choose-us.png" alt="Gnathos Face" class="main-image">
+                            <div class="experience-badge">
+                                <span class="years" style="margin-left: 10px;">20+</span>
+                                <span class="text" style="margin-left: 10px;">Years of Expertise</span>
+                            </div>
+                        </div>
+                        <div class="stats-card">
+                            <div class="stats-item">
+                                <div class="stats-icon">
+                                    <i class="bi bi-person-bounding-box"></i>
+                                </div>
+                                <div class="stats-info">
+                                    <h4>10000+</h4>
+                                    <p>Successful Surgeries</p>
+                                </div>
+                            </div>
+                            <div class="stats-item">
+                                <div class="stats-icon">
+                                    <i class="bi bi-hand-thumbs-up"></i>
+                                </div>
+                                <div class="stats-info">
+                                    <h4>99%</h4>
+                                    <p>Patient Trust Index</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
-    <section class="ivy-video-testimonials py-5">
+                <div class="col-lg-6">
+                    <div class="why-choose-content">
+                        <div class="choose-item">
+                            <div class="choose-icon">
+                                <div class="icon-shape">
+                                    <i class="bi bi-award"></i>
+                                </div>
+                            </div>
+                            <div class="choose-text">
+                                <h3>20+ Years of Specialized Practice</h3>
+                                <p>Our team brings over two decades of focused experience in oral and maxillofacial surgery.</p>
+                            </div>
+                        </div>
+
+                        <!-- <div class="choose-item">
+                            <div class="choose-icon">
+                                <div class="icon-shape">
+                                    <i class="bi bi-globe2"></i>
+                                </div>
+                            </div>
+                            <div class="choose-text">
+                                <h3>Internationally Trained Surgeons</h3>
+                                <p>Our surgeons have been trained at top institutions worldwide, ensuring global standards of care.</p>
+                            </div>
+                        </div> -->
+
+                        <div class="choose-item">
+                            <div class="choose-icon">
+                                <div class="icon-shape">
+                                    <i class="bi bi-emoji-smile"></i>
+                                </div>
+                            </div>
+                            <div class="choose-text">
+                                <h3>Highest Patient Trust in Hyderabad</h3>
+                                <p>Recognized for our consistent outcomes and compassionate care, we are trusted by patients across the region.</p>
+                            </div>
+                        </div>
+
+                        <div class="choose-item">
+                            <div class="choose-icon">
+                                <div class="icon-shape">
+                                    <i class="bi bi-cpu"></i>
+                                </div>
+                            </div>
+                            <div class="choose-text">
+                                <h3>Latest Digital & Imaging Technology</h3>
+                                <p>We use advanced imaging and surgical planning tools to deliver precise and predictable results.</p>
+                            </div>
+                        </div>
+
+                        <div class="choose-item">
+                            <div class="choose-icon">
+                                <div class="icon-shape">
+                                    <i class="bi bi-person-lines-fill"></i>
+                                </div>
+                            </div>
+                            <div class="choose-text">
+                                <h3>Personalized Treatment Plans</h3>
+                                <p>Every case is unique — we tailor each treatment plan to your specific needs and facial anatomy.</p>
+                            </div>
+                        </div>
+
+                        <div class="choose-item">
+                            <div class="choose-icon">
+                                <div class="icon-shape">
+                                    <i class="bi bi-arrow-repeat"></i>
+                                </div>
+                            </div>
+                            <div class="choose-text">
+                                <h3>Post-Operative Care & Follow-ups</h3>
+                                <p>Our commitment doesn't end with surgery. We ensure complete recovery with attentive aftercare and follow-ups.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+    <!-- <section class="ivy-video-testimonials py-5">
         <div class="container">
-            <!-- Section Header -->
+         
             <div class="row justify-content-center">
                 <div class="col-lg-8 text-center">
                     <div class="ivy-section-header">
@@ -937,11 +1304,11 @@
                 </div>
             </div>
 
-            <!-- Video Grid -->
+          
             <div class="row mt-4">
                 <div class="col-12">
                     <div class="ivy-video-grid">
-                        <!-- Video Testimonial 1 -->
+                     
                         <div class="ivy-video-card">
                             <div class="ivy-video-preview">
                                 <div class="ivy-video-placeholder" data-video-id="ELuRdQVtBbM" data-patient-name="Mr. Chavi Raj" data-condition="Cancer">
@@ -960,7 +1327,7 @@
                             </div>
                         </div>
 
-                        <!-- Video Testimonial 2 -->
+                      
                         <div class="ivy-video-card">
                             <div class="ivy-video-preview">
                                 <div class="ivy-video-placeholder" data-video-id="vQqHUdUcNwk" data-patient-name="Mr. Pradyumna Dutta" data-condition="Prostate Cancer">
@@ -979,7 +1346,6 @@
                             </div>
                         </div>
 
-                        <!-- Video Testimonial 3 -->
                         <div class="ivy-video-card">
                             <div class="ivy-video-preview">
                                 <div class="ivy-video-placeholder" data-video-id="hf5lOukzQ94" data-patient-name="Mr. Rajiv" data-condition="4th Stage Cancer">
@@ -998,7 +1364,7 @@
                             </div>
                         </div>
 
-                        <!-- Video Testimonial 4 -->
+                       
                         <div class="ivy-video-card">
                             <div class="ivy-video-preview">
                                 <div class="ivy-video-placeholder" data-video-id="FxcUBX_Ll7g" data-patient-name="Mr. Radheshyam Malani" data-condition="Bladder Cancer">
@@ -1021,19 +1387,121 @@
             </div>
         </div>
         
-        <!-- Shared Modal for all videos -->
+      
         <div id="videoModal" class="video-modal">
             <span class="close-modal" id="closeModal">&times;</span>
             <div class="video-modal-content">
                 <div class="video-container" id="videoContainer">
-                    <!-- The iframe will be inserted here dynamically -->
+                  
                 </div>
             </div>
         </div>
-    </section>
+    </section> -->
 
 
 
+
+    <!-- cta  -->
+
+     <section class="gnathos-testimonial-section" style="background-color: #031B4E;">
+    <div class="container">
+      <h2 class="gnathos-section-title">Real Stories. Real Results.</h2>
+      <p class="gnathos-section-subtitle" style="color:#fff">What our patients say about their experience</p>
+
+      <div class="gnathos-decoration-shape gnathos-shape-1"></div>
+      <div class="gnathos-decoration-shape gnathos-shape-2"></div>
+
+      <div class="row">
+        <!-- Testimonial 1 -->
+        <div class="col-lg-4 col-md-6 mb-4">
+          <div class="gnathos-testimonial-card">
+            <span class="gnathos-testimonial-tag">TMJ Treatment</span>
+            <div class="gnathos-quote-icon"><i class="fas fa-quote-left"></i></div>
+            <div class="gnathos-testimonial-content">
+              <div class="gnathos-testimonial-rating">
+                <i class="fas fa-star gnathos-star-icon"></i>
+                <i class="fas fa-star gnathos-star-icon"></i>
+                <i class="fas fa-star gnathos-star-icon"></i>
+                <i class="fas fa-star gnathos-star-icon"></i>
+                <i class="fas fa-star gnathos-star-icon"></i>
+              </div>
+              <p class="gnathos-testimonial-text">
+                "My jaw pain and clicking <span class="gnathos-highlight">vanished</span> after visiting Gnathos. The care was exceptional!"
+              </p>
+              <div class="gnathos-client-info">
+                <div class="gnathos-client-avatar"><i class="fas fa-user"></i></div>
+                <div class="gnathos-client-details">
+                  <h5 class="gnathos-client-name">Ravi K.</h5>
+                  <p class="gnathos-client-location">Hyderabad</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Testimonial 2 -->
+        <div class="col-lg-4 col-md-6 mb-4">
+          <div class="gnathos-testimonial-card">
+            <span class="gnathos-testimonial-tag">Facial Injury</span>
+            <div class="gnathos-quote-icon"><i class="fas fa-quote-left"></i></div>
+            <div class="gnathos-testimonial-content">
+              <div class="gnathos-testimonial-rating">
+                <i class="fas fa-star gnathos-star-icon"></i>
+                <i class="fas fa-star gnathos-star-icon"></i>
+                <i class="fas fa-star gnathos-star-icon"></i>
+                <i class="fas fa-star gnathos-star-icon"></i>
+                <i class="fas fa-star gnathos-star-icon"></i>
+              </div>
+              <p class="gnathos-testimonial-text">
+                "The <span class="gnathos-highlight">best decision</span> I made for my son's facial injury. Clean clinic and highly professional team."
+              </p>
+              <div class="gnathos-client-info">
+                <div class="gnathos-client-avatar"><i class="fas fa-user"></i></div>
+                <div class="gnathos-client-details">
+                  <h5 class="gnathos-client-name">Meena T.</h5>
+                  <p class="gnathos-client-location">Secunderabad</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Testimonial 3 -->
+        <div class="col-lg-4 col-md-6 mb-4">
+          <div class="gnathos-testimonial-card">
+            <span class="gnathos-testimonial-tag">TMJ Specialist</span>
+            <div class="gnathos-quote-icon"><i class="fas fa-quote-left"></i></div>
+            <div class="gnathos-testimonial-content">
+              <div class="gnathos-testimonial-rating">
+                <i class="fas fa-star gnathos-star-icon"></i>
+                <i class="fas fa-star gnathos-star-icon"></i>
+                <i class="fas fa-star gnathos-star-icon"></i>
+                <i class="fas fa-star gnathos-star-icon"></i>
+                <i class="fas fa-star gnathos-star-icon"></i>
+              </div>
+              <p class="gnathos-testimonial-text">
+                "They truly have the <span class="gnathos-highlight">best maxillofacial surgeon</span> in Hyderabad. My TMJ pain is completely gone."
+              </p>
+              <div class="gnathos-client-info">
+                <div class="gnathos-client-avatar"><i class="fas fa-user"></i></div>
+                <div class="gnathos-client-details">
+                  <h5 class="gnathos-client-name">Arun M.</h5>
+                  <p class="gnathos-client-location">Chennai</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+<!-- <div class="real" style="display: block; text-align: center; ">
+     <a href="#" class="btn btn-primary" style="background-color:white !important; color: #031B4E;">View More</a>
+     </div> -->
+    </div>
+
+  </section>
+
+<!-- faq -->
 
     <section class="ivy-faq-section py-5">
         <div class="container">
@@ -1056,7 +1524,8 @@
                             <div class="ivy-faq-question" id="headingOne">
                                 <button class="ivy-faq-btn" type="button" data-bs-toggle="collapse"
                                     data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                                    <span>What are the common signs of neurological problems?
+                                    <span>I have jaw pain and clicking sounds—should I see a maxillofacial surgeon?
+
                                     </span>
                                     <div class="ivy-faq-icon">
                                         <i class="bi bi-plus-lg"></i>
@@ -1067,9 +1536,8 @@
                             <div id="collapseOne" class="collapse show" aria-labelledby="headingOne"
                                 data-bs-parent="#faqAccordion">
                                 <div class="ivy-faq-answer">
-                                    <p>Common signs include persistent headaches, seizures, numbness or weakness,
-                                        difficulty walking, and changes in speech or vision. If you experience any of
-                                        these symptoms, it's important to consult a neurological specialist.
+                                    <p>Yes! That could be a sign of a TMJ disorder or jaw misalignment. Our specialists at Gnathos Face can diagnose and treat it effectively.
+
                                     </p>
                                 </div>
                             </div>
@@ -1080,7 +1548,8 @@
                             <div class="ivy-faq-question" id="headingTwo">
                                 <button class="ivy-faq-btn collapsed" type="button" data-bs-toggle="collapse"
                                     data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                                    <span>How should I prepare for my neurological appointment?
+                                    <span>Is Gnathos Face located only in Hyderabad?
+
                                     </span>
                                     <div class="ivy-faq-icon">
                                         <i class="bi bi-plus-lg"></i>
@@ -1091,8 +1560,7 @@
                             <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo"
                                 data-bs-parent="#faqAccordion">
                                 <div class="ivy-faq-answer">
-                                    <p>Bring your medical history, a list of current medications, any relevant imaging
-                                        reports (CT scans, MRIs), and a list of questions you may have for the doctor.
+                                    <p>Yes, we’re based in Hyderabad—but we also offer online consultations for patients across India.
                                     </p>
                                 </div>
                             </div>
@@ -1103,7 +1571,8 @@
                             <div class="ivy-faq-question" id="headingThree">
                                 <button class="ivy-faq-btn collapsed" type="button" data-bs-toggle="collapse"
                                     data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                                    <span>What are the treatment options for cancer?
+                                    <span>How long will it take to recover after jaw or TMJ surgery?
+
 
                                     </span>
                                     <div class="ivy-faq-icon">
@@ -1115,8 +1584,8 @@
                             <div id="collapseThree" class="collapse" aria-labelledby="headingThree"
                                 data-bs-parent="#faqAccordion">
                                 <div class="ivy-faq-answer">
-                                    <p>Treatment options for cancer include surgery, chemotherapy, radiation therapy,
-                                        immunotherapy, targeted therapy, and hormone therapy.
+                                    <p>Most people start feeling better in 1–2 weeks, but it depends on the treatment. Don’t worry—we guide you at every step.
+
 
                                     </p>
                                 </div>
@@ -1128,7 +1597,7 @@
                             <div class="ivy-faq-question" id="headingFour">
                                 <button class="ivy-faq-btn collapsed" type="button" data-bs-toggle="collapse"
                                     data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-                                    <span>What is the recovery process like after cancer surgery?
+                                    <span>Can I use my health insurance for treatment here?
 
 
                                     </span>
@@ -1141,45 +1610,20 @@
                             <div id="collapseFour" class="collapse" aria-labelledby="headingFour"
                                 data-bs-parent="#faqAccordion">
                                 <div class="ivy-faq-answer">
-                                    <p>Recovery involves a hospital stay, pain management, physical therapy, and a
-                                        gradual return to normal activities over several weeks to months.
+                                    <p>Absolutely. We help you with the paperwork and support all major insurance plans.
                                     </p>
                                 </div>
                             </div>
                         </div>
 
-                        <!-- FAQ Item 5 -->
-                        <div class="ivy-faq-item">
-                            <div class="ivy-faq-question" id="headingFive">
-                                <button class="ivy-faq-btn collapsed" type="button" data-bs-toggle="collapse"
-                                    data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
-                                    <span>How can I prevent cancer?
-
-
-                                    </span>
-                                    <div class="ivy-faq-icon">
-                                        <i class="bi bi-plus-lg"></i>
-                                        <i class="bi bi-dash-lg"></i>
-                                    </div>
-                                </button>
-                            </div>
-                            <div id="collapseFive" class="collapse" aria-labelledby="headingFive"
-                                data-bs-parent="#faqAccordion">
-                                <div class="ivy-faq-answer">
-                                    <p>Preventive measures include maintaining a healthy diet, exercising regularly,
-                                        avoiding tobacco, limiting alcohol, and getting regular check-ups.
-
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
+                       
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <section class="mob">
+    <!-- <section class="mob">
         <div class="container">
             <div class="navbar-fixed-bottom hidden-md hidden-sm hidden-lg col-xs-12 custom-bottom-mob-nav">
                 <div class="hidden-md hidden-sm hidden-lg col-xs-12 bg-white">
@@ -1221,7 +1665,7 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section> -->
 
 
     <a href="https://wa.me/919599285476" class="whatsapp-float" target="_blank">
@@ -1237,27 +1681,29 @@
                 <div class="row align-items-center">
                     <div class="col-lg-7">
                         <div class="ivy-register-content">
-                            <h2 class="ivy-register-heading">Get Free Assistance From Our Health Advisor
+                            <h2 class="ivy-register-heading">Get Free Assistance from Our Care Team
+
                             </h2>
-                            <p class="ivy-register-subtext">Save time and avoid the hassle of registering online before
-                                your visit. </p>
+                            <p class="ivy-register-subtext">Skip the long wait and get help booking your visit or online consultation—quick and easy.
+ </p>
                             <div class="ivy-contact-info">
                                 <div class="ivy-contact-item">
                                     <i class="bi bi-telephone-fill"></i>
-                                    <span>Tel - <a href="tel:+919182900217">+919182900217 </a></span>
+                                    <span>Tel - <a href="tel:+919182900217">+91 98765 43210</a></span>
                                 </div>
                                 <div class="ivy-contact-item">
                                     <i class="bi bi-envelope-fill"></i>
                                     <span> Email: <a
-                                            href="mailto:contactus@artemishospitals.com">contactus@artemishospitals.com</a></span>
+                                            href="mailto:care@gnathosface.com">care@gnathosface.com
+</a></span>
                                 </div>
                             </div>
-                            <a href="#form" class="ivy-book-btn">Book An Appointment</a>
+                             <a href="#" class="ivy-appointment-btn">Book an Appointment</a>
                         </div>
                     </div>
                     <div class="col-lg-5 d-none d-lg-block">
                         <div class="ivy-register-image">
-                            <img src="assets/images/artms-building.jpeg" alt="Artemis" class="img-fluid">
+                            <img src="assets/images/artms-building.jpeg" alt="gnathos" class="img-fluid">
                         </div>
                     </div>
                 </div>
@@ -1270,7 +1716,7 @@
             <div class="container">
                 <div class="row align-items-center">
                     <div class="col-md-6">
-                        <p class="ivy-copyright-text">© 2025 Artemis Hospital. All Rights Reserved.</p>
+                        <p class="ivy-copyright-text">© 2025 Gnathos Hospital. All Rights Reserved.</p>
                     </div>
                 </div>
             </div>
