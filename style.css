@@ -161,7 +161,7 @@ body {
   transform: translateX(3px);
 }
 
-@media (max-width: 991px) {
+/* @media (max-width: 991px) {
   .navbar-collapse {
     background-color: var(--light-cream);
     padding: 20px;
@@ -177,8 +177,9 @@ body {
   .appointment-btn {
     margin-top: 10px;
     width: fit-content;
+    display: flex;
   }
-}
+} */
 
 /* Hero Banner Section */
 .hero-section {
@@ -1964,7 +1965,7 @@ body {
 }
 
 .ivy-faq-btn.collapsed .ivy-faq-icon .bi-dash-lg {
-  opacity: 0;
+  opacity: 1;
 }
 
 .ivy-faq-answer {
@@ -2698,7 +2699,7 @@ margin-right: 8px;
 } */
 }
 
-/* Add specific adjustments for tablets */
+
 @media (min-width: 576px) and (max-width: 991px) {
   .ivy-specialist-role {
     min-height: 80px;
@@ -2725,7 +2726,7 @@ margin-right: 8px;
     display: none !important;
   }
 }
-/* Fix WhatsApp button positioning on desktop */
+
 @media (min-width: 768px) {
   .ivy-specialist-connects {
     display: none !important;
