@@ -3499,3 +3499,12 @@ margin-right: 8px;
     top: -40px;
   }
 }
+
+@media (max-width:562px) {
+.hero-features {
+   
+    gap: 30px;
+    margin-top: 40px;
+    animation: fadeInUp 1s both 0.5s;
+}
+}
