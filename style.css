@@ -2114,10 +2114,12 @@ body {
 }
 
 .ivy-contact-item {
-  display: flex;
-  align-items: center;
-  margin-bottom: 10px;
-  color: var(--dark-brown);
+    /* margin: 0 auto; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+    color: var(--dark-brown);
 }
 
 .ivy-contact-item i {
